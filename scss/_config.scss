@@ -1,0 +1,14 @@
+$primaryColor: rgb(91, 30, 235);
+$secondaryColor: rgb(54, 2, 173);
+$ternaryColor: rgb(192, 42, 192);
+
+%buttons {
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 2em;
+}
+
+%hoverButton {
+  background-color: darken($ternaryColor, 10%);
+}

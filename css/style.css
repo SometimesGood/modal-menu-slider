@@ -1,0 +1,178 @@
+#open {
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 2em;
+}
+
+#open:hover {
+  background-color: #962196;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.superPush {
+  -webkit-transform: translateX(15vw);
+          transform: translateX(15vw);
+}
+
+header {
+  background-color: #3602ad;
+  width: 100%;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 30px auto;
+}
+
+#open {
+  background-color: #c02ac0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar {
+  background-color: #5b1eeb;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 15vw;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 10;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#navbar img {
+  border-radius: 50%;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar ul li {
+  margin-top: 0.5em;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#navbar ul li:hover {
+  background-color: #3602ad;
+}
+
+h1 {
+  margin: 0;
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+
+.modal-header {
+  background: #5b1eeb;
+  color: white;
+  padding: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  color: white;
+  top: 10px;
+  right: 10px;
+  border: none;
+}
+
+.submit-btn {
+  background-color: #c02ac0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+}
